@@ -11,7 +11,7 @@
         padding: 0;
         text-align: center;
         box-sizing: border-box;
-        overflow: hidden;
+        overflow: auto;
       }
       .main {
         background: url('/bg.jpeg') no-repeat;
@@ -57,6 +57,20 @@
         padding: 15px;
         border-radius: 2%;
       }
+
+      /* Tablets ad under */
+      @media (max-width: 768px) {
+        .construction {
+          padding: 20px 0;
+          margin: 20px 0;
+        }
+        .construction h1 {
+          font-size: 40px;
+        }
+        .construction .text p {
+          text-align: justify;
+        }
+      }
     </style>
   </head>
   <body>
@@ -65,11 +79,15 @@
         <div class="construction">
           <img class="logo" src="/logo.png" alt="" />
           <h1>Coming Soon</h1>
-          <p>
-            Our website is under construction. We are working very hard to give
-            you the best experience with this one!
-          </p>
+          <div class="text">
+            <p>
+              Our website is under construction. We are working very hard to
+              give you the best experience with this one!
+            </p>
+          </div>
+
           <p>/////////////////</p>
+
           <a target="_blank" href="https://github.com/jasonchg/cravedu-mern"
             >Check Our Github Repo</a
           >
